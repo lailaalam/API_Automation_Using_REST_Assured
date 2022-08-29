@@ -1,0 +1,67 @@
+<suite thread-count="1" verbose="1" name="API automation">
+    <test name="Login" priority="1">
+        <classes>
+            <class name="TestRunner.LoginTestRunner"/>
+        </classes>
+    </test>
+    <test name="Login with wrong email" priority="2">
+        <classes>
+            <class name="TestRunner.LoginWithWrongEmailTestRunner"/>
+        </classes>
+    </test>
+    <test name="Login with wrong password" priority="3">
+        <classes>
+            <class name="TestRunner.LoginWithWrongPasswordTestRunner"/>
+        </classes>
+    </test>
+    <test name="GetUserList API" priority="4">
+        <classes>
+            <class name="TestRunner.GetUserListTestRunner"/>
+        </classes>
+    </test>
+    <test name="GetUserList inputting wrong token" priority="5">
+        <classes>
+            <class name="TestRunner.GetUserListIfInputWrongTokenTestRunner"/>
+        </classes>
+    </test>
+    <test name="GetUserList inputting no token" priority="6">
+        <classes>
+            <class name="TestRunner.GetUserListIfUserDoesNotInputTokenTestRunner"/>
+        </classes>
+    </test>
+    <test name="Create user API" priority="7">
+        <classes>
+            <class name="TestRunner.CreateNewUserTestRunner"/>
+        </classes>
+    </test>
+    <test name="Search user" priority="8">
+        <classes>
+            <class name="TestRunner.SearchUserTestRunner"/>
+        </classes>
+    </test>
+    <test name="Search user without shared key" priority="9">
+        <classes>
+            <class name="TestRunner.SearchUserwithoutPWKeyTestRunner"/>
+        </classes>
+    </test>
+    <test name="Update user API" priority="10">
+        <classes>
+            <class name="TestRunner.UpdateUserTestRunner"/>
+        </classes>
+    </test>
+    <test name="Update Specific Info API" priority="11">
+        <classes>
+            <class name="TestRunner.UpdateSpecificInfoTestRunner"/>
+        </classes>
+    </test>
+    <test name="Delete User API" priority="12">
+        <classes>
+            <class name="TestRunner.DeleteUserTestRunner"/>
+        </classes>
+    </test>
+    <test name="Search the deleted User" priority="13">
+        <classes>
+            <class name="TestRunner.DeletedUserSearchTestRunner"/>
+        </classes>
+    </test>
+</suite>
